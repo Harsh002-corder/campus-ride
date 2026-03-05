@@ -1,8 +1,4 @@
-const LOCATION_FALLBACK = typeof window !== "undefined"
-  ? `${window.location.protocol}//${window.location.hostname}`
-  : "http://localhost";
-
-const API_HOST_FALLBACK = `${LOCATION_FALLBACK}:4000`;
+const API_HOST_FALLBACK = "https://campusride-backend.onrender.com";
 
 const normalizeBaseUrl = (value?: string) => (value || "").trim().replace(/\/$/, "");
 

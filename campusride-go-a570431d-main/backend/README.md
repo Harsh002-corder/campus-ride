@@ -130,7 +130,7 @@ Client room controls:
 Set frontend env:
 
 ```bash
-VITE_API_BASE_URL=http://localhost:4000/api
+VITE_API_BASE_URL=https://campusride-backend.onrender.com/api
 ```
 
 Frontend client is in `src/lib/apiClient.ts` and auth screens are wired to backend.
