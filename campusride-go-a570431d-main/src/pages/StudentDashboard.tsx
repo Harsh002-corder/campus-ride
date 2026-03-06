@@ -23,6 +23,7 @@ import { apiClient, type AuthUser, type FavoriteLocation, type RideDto, type Rid
 import { CAMPUS_BOUNDARY_POLYGON, CAMPUS_MAP_CENTER, isWithinCampusBoundary } from "@/lib/campusBoundary";
 import { CAMPUS_STOPS, type CampusStop } from "@/lib/stops";
 import { getSocketClient } from "@/lib/socketClient";
+import { API_BASE_URL } from "@/config/api";
 import {
   MapPin, Clock, LogOut, Navigation,
   Calendar, CreditCard, Shield, ChevronRight, Search, Map,
@@ -631,7 +632,7 @@ const StudentDashboard = () => {
                       minChars={2}
                       maxResults={8}
                       debounceMs={300}
-                      remoteEndpoint={import.meta.env.VITE_USE_REMOTE_STOP_SUGGEST === "true" ? `${import.meta.env.VITE_API_BASE_URL || (import.meta.env.PROD ? "https://campusride-backend.onrender.com/api" : "http://localhost:4000/api")}/stops/suggest` : undefined}
+                      remoteEndpoint={import.meta.env.VITE_USE_REMOTE_STOP_SUGGEST === "true" ? `${API_BASE_URL}/stops/suggest` : undefined}
                       icon={<Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />}
                     />
                     {/* Swap button */}
@@ -659,7 +660,7 @@ const StudentDashboard = () => {
                       minChars={2}
                       maxResults={8}
                       debounceMs={300}
-                      remoteEndpoint={import.meta.env.VITE_USE_REMOTE_STOP_SUGGEST === "true" ? `${import.meta.env.VITE_API_BASE_URL || (import.meta.env.PROD ? "https://campusride-backend.onrender.com/api" : "http://localhost:4000/api")}/stops/suggest` : undefined}
+                      remoteEndpoint={import.meta.env.VITE_USE_REMOTE_STOP_SUGGEST === "true" ? `${API_BASE_URL}/stops/suggest` : undefined}
                       icon={<Navigation className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />}
                     />
                   </div>

@@ -4,9 +4,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "nodemon server.js",
-    "start": "node server.js",
-    "check": "node --check server.js",
+    "dev": "nodemon src/server.js",
+    "start": "node src/server.js",
+    "check": "node --check src/server.js",
     "seed:ride-settings": "node scripts/seed-ride-settings.mjs"
   },
   "dependencies": {

@@ -37,7 +37,7 @@ Then set values in `.env` (especially `VITE_GOOGLE_MAPS_API_KEY`).
 
 For mobile/LAN testing, set:
 
-- `VITE_API_BASE_URL=http://<YOUR_PC_LAN_IP>:4000/api`
+- `VITE_API_URL=http://<YOUR_PC_LAN_IP>:4000`
 - Optional: `VITE_SOCKET_BASE_URL=http://<YOUR_PC_LAN_IP>:4000`
 
 Backend origin policy (in `backend/.env`):

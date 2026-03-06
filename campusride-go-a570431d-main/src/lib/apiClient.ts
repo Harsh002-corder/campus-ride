@@ -1,4 +1,4 @@
-import { API_BASE_URL } from "@/lib/runtimeConfig";
+import { API_BASE_URL } from "@/config/api";
 
 export type UserRole = "student" | "driver" | "admin";
 
